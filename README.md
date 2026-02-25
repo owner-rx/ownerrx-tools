@@ -26,6 +26,7 @@ Alternatively, copy any skill folder manually into your `~/.claude/skills/` dire
 | **competitor-intel** | Analyzes competitors via web research: verified metrics, leverage strategies, predicted next moves |
 | **create-cowork-plugin** | Guides you through creating a new Cowork plugin from scratch — scaffolds structure, skills, and commands. Includes a real-world example (brand-studio) |
 | **cro-optimization** | Audits landing pages against CRO principles and delivers actionable conversion optimization recommendations |
+| **geo-aeo-optimizer** | Audits webpages for AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews) — scores across 6 research-backed categories, compares competitors, rewrites weak sections |
 | **go-to-market-plan** | Asks diagnostic questions and delivers 3 tailored go-to-market strategies based on your stage, product, and market |
 | **lead-magnet-generator** | Creates viral lead magnet posts that drive comments and DMs — quick and detailed format versions |
 | **linkedin-writer** | Creates high-performing LinkedIn posts using proven formats, templates, and voice matching |
@@ -34,6 +35,7 @@ Alternatively, copy any skill folder manually into your `~/.claude/skills/` dire
 | **prd-generator** | Turns rough product ideas into structured PRDs (Product Requirements Documents) optimized for AI coding tools |
 | **pricing-strategist** | Builds comprehensive pricing strategies — tiers, price points, model recommendations — through interactive questions |
 | **product-hunt-launch-plan** | Creates a step-by-step Product Hunt launch plan designed to rank #1 |
+| **search-visibility-optimizer** | Full SEO + AI search audit — scores across 6 categories (Authority, Content Structure, Entity Clarity, Technical Foundation, AI Crawlability, Freshness), generates ready-to-use fixes (schema markup, llms.txt, robots.txt, content rewrites) |
 | **skill-creator** | Guides you through creating effective Claude skills — structure, frontmatter, references, and best practices |
 | **sop-creator** | Creates detailed Standard Operating Procedures for repeatable business processes |
 | **strategic-planning** | Analyzes your business context and delivers the 3 highest-impact next moves for growth |
@@ -54,6 +56,10 @@ Alternatively, copy any skill folder manually into your `~/.claude/skills/` dire
 4. Select `plugins/brand-studio.plugin`
 5. Run `/cowork-plugin-customizer` to personalize it with your brand
 
+## Docs
+
+Implementation plans and design documents live in `docs/plans/`. These capture the research and architecture behind skills that include Python scripts.
+
 ## How skills work
 
 Each skill follows the same structure:
@@ -61,9 +67,11 @@ Each skill follows the same structure:
 ```
 skill-name/
 ├── SKILL.md              # Main skill file (knowledge + instructions)
-└── references/           # Supporting data loaded on demand
-    ├── templates.md
-    └── examples.md
+├── references/           # Supporting data loaded on demand
+│   ├── templates.md
+│   └── examples.md
+└── scripts/              # Optional — Python scripts for skills that do analysis
+    └── analyze.py
 ```
 
 - **SKILL.md** is loaded when the skill is triggered
