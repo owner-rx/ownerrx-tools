@@ -1,0 +1,9 @@
+{
+  "name": "brand-studio",
+  "version": "0.1.0",
+  "description": "Customizable branded content creation system — presentations, PDFs, pitch decks, and documents with your brand identity and choice of content framework (IGNITE, EDUCATE, or REPORT)",
+  "author": {
+    "name": "OwnerRX AI Cohort"
+  },
+  "keywords": ["brand", "presentations", "keynote", "workshop", "pdf", "pitch-deck", "storytelling", "marketing", "educational", "report"]
+}

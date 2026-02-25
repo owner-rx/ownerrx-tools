@@ -1,0 +1,9 @@
+{
+  "name": "pedro-valera-brand-studio",
+  "version": "0.1.0",
+  "description": "Branded content creation system for Pedro Valera Digital — presentations, PDFs, pitch decks, and documents with consistent brand identity and storytelling psychology",
+  "author": {
+    "name": "Pedro Valera Digital"
+  },
+  "keywords": ["brand", "presentations", "keynote", "workshop", "pdf", "pitch-deck", "storytelling", "marketing"]
+}
