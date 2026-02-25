@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives (use original source instead)
+*.zip
+
+# Editor files
+*.swp
+*.swo
+*~
