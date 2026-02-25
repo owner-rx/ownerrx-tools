@@ -1,12 +1,6 @@
 ---
 name: create-cowork-plugin
-description: >
-  Guide users through creating a new plugin from scratch in a Cowork session.
-  Use when users want to create a plugin, build a plugin, make a new plugin, develop a plugin,
-  scaffold a plugin, start a plugin from scratch, or design a plugin for Claude Cowork.
-  Requires Cowork desktop app environment with access to the outputs directory for delivering
-  the final .plugin file. See pedro-valera-brand-studio/ for a real-world example of a
-  completed plugin with 3 skills and 5 commands.
+description: Guide users through creating a new plugin from scratch in a Cowork session. Use when users want to create a plugin, build a plugin, make a new plugin, develop a plugin, scaffold a plugin, start a plugin from scratch, or design a plugin for Claude Cowork. Requires Cowork desktop app environment with access to the outputs directory for delivering the final .plugin file.
 ---
 
 # Create Cowork Plugin
@@ -261,5 +255,4 @@ The `.plugin` file will appear in the chat as a rich preview where the user can 
 ## Additional Resources
 
 - **`references/component-schemas.md`** — Detailed format specifications for every component type (commands, skills, agents, hooks, MCP, CONNECTORS.md)
-- **`references/example-plugins.md`** — Four example plugin structures including a real-world example (Pedro Valera Brand Studio: 3 skills + 5 commands)
-- **`pedro-valera-brand-studio/`** — Complete real-world plugin to use as reference. Shows layered skill architecture (brand-identity + storytelling-framework + presentation-creator orchestrator) with commands that load skills via `@${CLAUDE_PLUGIN_ROOT}`
+- **`references/example-plugins.md`** — Three example plugin structures at different complexity levels (minimal, standard, full-featured)

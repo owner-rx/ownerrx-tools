@@ -46,14 +46,14 @@ Alternatively, copy any skill folder manually into your `~/.claude/skills/` dire
 
 | Plugin | What it does |
 |---|---|
-| **brand-studio.plugin** | Customizable branded content creation — keynotes, workshops, PDF guides, pitch decks, one-pagers. Includes 3 content frameworks (IGNITE, EDUCATE, REPORT) and dark/light mode selection. Customize with your own brand colors, fonts, and voice. |
+| **brand-studio.zip** | Customizable branded content creation — keynotes, workshops, PDF guides, pitch decks, one-pagers. Includes 3 content frameworks (IGNITE, EDUCATE, REPORT) and dark/light mode selection. Customize with your own brand colors, fonts, and voice. |
 
 ### Installing the plugin
 
 1. Open Claude Cowork
 2. Go to Settings > Plugins
 3. Click "Install from file"
-4. Select `plugins/brand-studio.plugin`
+4. Select `plugins/brand-studio.zip`
 5. Run `/cowork-plugin-customizer` to personalize it with your brand
 
 ## Docs
