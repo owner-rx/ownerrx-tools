@@ -47,14 +47,24 @@ Alternatively, copy any skill folder manually into your `~/.claude/skills/` dire
 | Plugin | What it does |
 |---|---|
 | **brand-studio.zip** | Customizable branded content creation — keynotes, workshops, PDF guides, pitch decks, one-pagers. Includes 3 content frameworks (IGNITE, EDUCATE, REPORT) and dark/light mode selection. Customize with your own brand colors, fonts, and voice. |
+| **search-visibility-plugin.zip** | Audits any webpage for AI search visibility across 6 research-backed categories, discovers which competitors AI recommends instead of you, and generates ready-to-use fixes (schema, llms.txt, robots.txt, meta tags). Supports manual competitor discovery — no OpenAI API key needed. |
 
-### Installing the plugin
+### Installing brand-studio
 
 1. Open Claude Cowork
 2. Go to Settings > Plugins
 3. Click "Install from file"
 4. Select `plugins/brand-studio.zip`
 5. Run `/cowork-plugin-customizer` to personalize it with your brand
+
+### Installing search-visibility-plugin
+
+1. Unzip to `~/.claude/plugins/repos/search-visibility/`
+2. Install dependencies: `pip install beautifulsoup4 requests`
+3. Commands:
+   - `/visibility [url]` — Full audit + strategy
+   - `/visibility-setup` — Reconfigure settings
+   - `/strategy-expand [model]` — Deep-dive on a specific strategy
 
 ## Docs
 
